@@ -1,3 +1,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@keyframes gradualexpand {
+    from {
+      width: 20rem;
+      animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+    }
+    to {
+      width: 95rem;
+      animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    }
+  }
+
+  .anim-gx{
+    animation: 2s ease-in-out forwards gradualexpand;
+  }
+
+  .w-40{
+    width: 40rem;
+  }
