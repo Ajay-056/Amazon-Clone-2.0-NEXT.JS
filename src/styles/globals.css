@@ -4,17 +4,17 @@
 
 @keyframes gradualexpand {
     from {
-      width: 20rem;
+      transform: translateX(0%);
       animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
     }
     to {
-      width: 95rem;
+      transform: translateX(90%); 
       animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
     }
   }
 
-  .anim-gx{
-    animation: 2s ease-in-out forwards gradualexpand;
+  .hover\:anim-gx:hover{
+    animation: 2s ease-in-out gradualexpand;
   }
 
   .w-40{
