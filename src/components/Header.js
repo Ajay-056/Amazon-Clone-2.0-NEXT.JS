@@ -42,7 +42,7 @@ function Header() {
                     <UserCircleIcon className='h-7 pl-2' />
                 </div>
                 <div className='relative cursor-pointer flex items-end hover:anim-gx pr-10 sm:pr-0'>
-                    <span className='absolute bottom-4 right-6 h-4 w-4 bg-yellow-400 text-center rounded-full text-black font-bold'>0</span>
+                    <span className='absolute bottom-5 right-6 h-4 w-4 bg-yellow-400 text-center rounded-full text-black font-bold'>0</span>
                     <ShoppingCartIcon className='h-7' />
                     <p className='pl-1 text-sm font-bold hidden sm:inline'>Cart</p>
                 </div>
