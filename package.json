@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "tailwind redux stripe firebase",
   "scripts": {
-    "dev": "next",
+    "dev": "next dev",
     "build": "next build",
     "start": "next start"
   },
@@ -15,7 +15,7 @@
     "@tailwindcss/line-clamp": "^0.4.4",
     "firebase": "^9.20.0",
     "firebase-admin": "^11.7.0",
-    "next": "^13.3.0",
+    "next": "latest",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-redux": "^8.0.5",
