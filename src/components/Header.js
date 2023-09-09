@@ -6,6 +6,7 @@ import {
   ShoppingCartIcon,
   UserCircleIcon,
 } from "@heroicons/react/outline";
+import { signIn, signOut, useSession } from "next-auth/react";
 
 function Header() {
   return (
@@ -29,10 +30,10 @@ function Header() {
             data-nav-selected="0"
             id="searchDropdownBox"
             name="url"
-            tabindex="0"
+            tabIndex="0"
             title="Search in"
           >
-            <option selected="selected" value="search-alias=aps">
+            <option selected value="search-alias=aps">
               All
             </option>
             <option value="search-alias=alexa-skills">Alexa Skills</option>
@@ -112,7 +113,9 @@ function Header() {
         {/* Top nav right side */}
         <div className="text-white flex items-center text-xs sm:text-sm space-x-2 sm:space-x-10 sm:mr-8 sm:px-4 whitespace-nowrap py-1">
           <div className="hidden sm:block cursor-pointer p-1 hover:outline rounded-sm outline-1 outline-white">
-            <p className="text-slate-300 text-xs">Hello, Sign In</p>
+            <p onClick={signIn} className="text-slate-300 text-xs">
+              Hello, Sign In
+            </p>
             <p className="font-bold md:text-sm">Account & Lists</p>
           </div>
           <div className="hidden sm:block cursor-pointer p-1 hover:outline rounded-sm outline-1 outline-white">
